@@ -32,7 +32,7 @@ jobs:
           context: ./STUDENTAPI-SPRINGBOOT
           file: ./STUDENTAPI-SPRINGBOOT/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/ansibleprep-backend:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./STUDENTAPI-REACT
           file: ./STUDENTAPI-REACT/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/ansibleprep-frontend:latest
